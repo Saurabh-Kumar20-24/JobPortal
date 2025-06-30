@@ -14,7 +14,11 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:[
+        'http://localhost:5173',
+        'https://jobportal-md7z.onrender.com',       // your backend
+        'https://jobportal-frontend-ne7v.onrender.com' // your frontend
+    ],
     credentials:true
 }
 
