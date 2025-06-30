@@ -42,13 +42,13 @@ const Job = ({job}) => {
         <p className="text-sm text-gray-600">{job?.description}</p>
       </div>
         <div className="flex items-center gap-2 mt-4">
-              <Badge variant="ghost" className={"text-blue-700 text-bold"}>
+              <Badge variant="ghost" className={"text-blue-700 font-bold"}>
                 {job?.position}
               </Badge>
-              <Badge variant="ghost" className={'text-[#F83002] text-bold'}>
+              <Badge variant="ghost" className={'text-[#F83002] font-bold'}>
                 {job?.jobType}
               </Badge>
-              <Badge variant="ghost" className={"text-[#7209b7] text-bold"}>
+              <Badge variant="ghost" className={"text-[#7209b7] font-bold"}>
                 {job?.salary}
               </Badge>
             </div>
